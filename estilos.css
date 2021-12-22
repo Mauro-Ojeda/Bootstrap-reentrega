@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(90deg, rgba(3,7,66,1) 2%, rgba(0,0,0,1) 50%, rgba(3,7,66,1) 98%);
+}
+#demo{
+    padding-top: 1rem;
+    width: 100vw;
+}
+ul a::first-letter{
+    color: white;
+    font-size: 1rem;
+}
+#navColor:active{
+    color:rgba(3,7,66,1) ;
+}
+.text-center{
+    color: whitesmoke;
+    padding-top: 1rem;
+}
+.imgP{
+    padding: 1rem;
+    background-color: white;
+    border-width: 0.2rem;
+    border-style: solid;
+    cursor: pointer;
+    color: rgb(57, 52, 154);
+    margin: 1rem ;
+}
+.imgP img{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+}
+#imgRoja{
+    padding-top: 2.5rem;
+}
+#carta{
+    width: 250px;
+    justify-content: center;
+    margin: 1rem;
+}
+.card-img-top{
+    width:10rem;
+    align-self:center ;
+}
+#snp{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+h4:hover{
+    color: #0d18aa;
+    font-size: 1.8rem;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer ul li a{
+    font-size: 1rem;
+    justify-content: space-between;
+    display: inline-block;
+}
+footer ul li{
+    display: inline-block;
+    padding-top: 1rem;
+    align-items: center;
+}
