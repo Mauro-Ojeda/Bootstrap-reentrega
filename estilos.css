@@ -61,6 +61,22 @@ h4:hover{
     color: #0d18aa;
     font-size: 1.8rem;
 }
+.marcas img{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    border: white solid 1px;
+}
+.pp{
+    color: tomato;
+    margin: 1rem;
+}
+.checkColor{
+    color:tomato;
+}
+#boton{
+    margin: 1rem;
+}
 /* FOOTER */
 footer{
     display: flex;
