@@ -5,15 +5,24 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
+*::selection{
+    color: blue;
+}
 html{
     scroll-behavior: smooth;
 }
 body{
     background: linear-gradient(90deg, rgba(3,7,66,1) 2%, rgba(0,0,0,1) 50%, rgba(3,7,66,1) 98%);
 }
+/* nav y carrusel */
+#nav1{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 2%, rgba(13,24,170,1) 50%, rgba(0,0,0,1) 98%);
+    border-bottom: 2px solid #000;
+}
 #demo{
     padding-top: 1rem;
     width: 100vw;
+    cursor: pointer;
 }
 ul a::first-letter{
     color: white;
@@ -26,6 +35,13 @@ ul a::first-letter{
     color: whitesmoke;
     padding-top: 1rem;
 }
+#scaY{
+    transition: all 2s ease-in-out;
+}
+#scaY:hover{
+    transform: translateY(0.2rem);
+}
+/* cards */
 .imgP{
     padding: 1rem;
     background-color: white;
@@ -51,16 +67,29 @@ ul a::first-letter{
 .card-img-top{
     width:10rem;
     align-self:center ;
+    cursor: pointer;
 }
 #snp{
     margin: 0px;
     padding: 0px;
     justify-content: center;
 }
-h4:hover{
-    color: #0d18aa;
-    font-size: 1.8rem;
+h4{
+    font-size: 1rem;
+    transition: all .5s ease ;
+    cursor: pointer;
 }
+.subCrece:hover{
+    font-size: 1.5rem;
+    color: #0d18aa;
+}
+.btn-success{
+    transition: background 1s ease-in;
+}
+.btn-success:hover{
+    background: rgb(28, 70, 28);
+}
+/* cards Fin */
 .marcas img{
     width: 10rem;
     height: 10rem;
@@ -68,8 +97,32 @@ h4:hover{
     border: white solid 1px;
 }
 .pp{
-    color: tomato;
+    color:white ;
     margin: 1rem;
+}
+/* animacion */
+.ultDisp{
+        animation-duration: 3s;
+        animation-name: slideIn;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        color: red;
+        transition: 1s ease-in;
+        cursor: pointer;
+}
+@keyframes slideIn {
+    from {
+        margin-left:50%;
+        width: 110%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.ultDisp:hover{
+    color: rgb(96, 7, 7);
 }
 .checkColor{
     color:tomato;
@@ -77,11 +130,26 @@ h4:hover{
 #boton{
     margin: 1rem;
 }
+.centrar{
+    margin-left: 45%;
+    transition: background 1s ease-in;
+}
+.centrar:hover{
+    background: #0000   ;
+}
+.tranf{
+    transition: all 2s ease-in-out;
+    margin: 1rem;
+}
+.tranf:hover{
+    transform: translatex(1rem);
+}
 /* FOOTER */
 footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 1rem;
 }
 footer ul li a{
     font-size: 1rem;
