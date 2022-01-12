@@ -1,95 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
-html{
-    scroll-behavior: smooth;
+
+html {
+  scroll-behavior: smooth;
 }
-body{
-    background: linear-gradient(90deg, rgba(3,7,66,1) 2%, rgba(0,0,0,1) 50%, rgba(3,7,66,1) 98%);
+
+body {
+  background: linear-gradient(90deg, #030742 2%, black 50%, #030742 98%);
 }
-#demo{
-    padding-top: 1rem;
-    width: 100vw;
+
+/* animacion */
+.ultDisp {
+  animation-duration: 3s;
+  animation-name: slideIn;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  color: red;
+  transition: 1s ease-in;
+  cursor: pointer;
 }
-ul a::first-letter{
-    color: white;
-    font-size: 1rem;
+
+@keyframes slideIn {
+  from {
+    margin-left: 50%;
+    width: 110%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
-#navColor:active{
-    color:rgba(3,7,66,1) ;
+.ultDisp:hover {
+  color: #600707;
 }
-.text-center{
-    color: whitesmoke;
-    padding-top: 1rem;
+
+.checkColor {
+  color: tomato;
 }
-.imgP{
-    padding: 1rem;
-    background-color: white;
-    border-width: 0.2rem;
-    border-style: solid;
-    cursor: pointer;
-    color: rgb(57, 52, 154);
-    margin: 1rem ;
+
+#boton {
+  margin: 1rem;
 }
-.imgP img{
-    width: 10rem;
-    height: 10rem;
-    margin: 1rem;
+
+.btnHov {
+  justify-self: center;
+  transition: background 1s ease-in;
 }
-#imgRoja{
-    padding-top: 2.5rem;
+
+.btnHov:hover {
+  background: #0000;
 }
-#carta{
-    width: 250px;
-    justify-content: center;
-    margin: 1rem;
+
+.tranf {
+  transition: all 2s ease-in-out;
+  margin: 1rem;
 }
-.card-img-top{
-    width:10rem;
-    align-self:center ;
+
+.tranf:hover {
+  transform: translatex(1rem);
 }
-#snp{
-    margin: 0px;
-    padding: 0px;
-    justify-content: center;
+
+#nav1 {
+  background: linear-gradient(90deg, black 2%, #0d18aa 50%, black 98%);
+  border-bottom: 2px solid #000;
 }
-h4:hover{
-    color: #0d18aa;
-    font-size: 1.8rem;
+
+#demo {
+  padding-top: 1rem;
+  width: 100vw;
+  cursor: pointer;
 }
-.marcas img{
-    width: 10rem;
-    height: 10rem;
-    margin: 1rem;
-    border: white solid 1px;
+
+.carousel-item {
+  height: 266.44px;
 }
-.pp{
-    color: tomato;
-    margin: 1rem;
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-.checkColor{
-    color:tomato;
+
+ul a::first-letter {
+  color: white;
+  font-size: 1rem;
 }
-#boton{
-    margin: 1rem;
+
+#navColor:active {
+  color: #030742;
 }
-/* FOOTER */
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+.text-center {
+  color: whitesmoke;
+  padding-top: 1rem;
 }
-footer ul li a{
-    font-size: 1rem;
-    justify-content: space-between;
-    display: inline-block;
+
+#scaY {
+  transition: all 2s ease-in-out;
 }
-footer ul li{
-    display: inline-block;
-    padding-top: 1rem;
-    align-items: center;
+
+#scaY:hover {
+  transform: translateY(0.2rem);
 }
+
+.imgP {
+  padding: 1rem;
+  background-color: white;
+  border-width: 0.2rem;
+  border-style: solid;
+  cursor: pointer;
+  color: #39349a;
+  margin: 1rem;
+}
+
+.imgP img {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+#imgRoja {
+  padding-top: 2.5rem;
+}
+
+#carta {
+  width: 250px;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.card-img-top {
+  width: 10rem;
+  align-self: center;
+  cursor: pointer;
+}
+
+#snp {
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+}
+
+h4 {
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.subCrece:hover {
+  font-size: 1.5rem;
+  color: #0d18aa;
+}
+
+.btn-success {
+  transition: background 1s ease-in;
+}
+
+.btn-success:hover {
+  background: #1c461c;
+}
+
+.marcas img {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  border: white solid 1px;
+}
+
+.pp {
+  color: white;
+  margin: 1rem;
+}
+
+.redess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red--wsp {
+  background: #25D366;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.red--youtube {
+  background: #ce1312;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.red--linkedin {
+  background: #0e76a8;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+  padding-top: 1rem;
+  align-items: center;
+}
+footer ul li a {
+  font-size: 1rem;
+  justify-content: space-between;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 480px) {
+  .carousel-indicators, .carousel-control-prev-icon, .carousel-control-next-icon {
+    display: none;
+  }
+
+  .mobp {
+    margin: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
