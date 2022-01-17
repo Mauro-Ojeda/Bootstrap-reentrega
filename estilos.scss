@@ -1,7 +1,5 @@
 //  VARIABLES
 $un:1rem;
-$cinco:5rem;
-$diez:10rem;
 $azulFuerte:rgba(3,7,66,1);
 $azul:#0d18aa;
 $negrosuave:rgba(0,0,0,1);
@@ -23,24 +21,12 @@ body{
 }
 @import "animacion";
 @import "navCarousel";
-@mixin cards ($cinco){
-    width: 5rem;
+@mixin cards{
+    width: 10rem;
     height: 10rem;
     margin: 1rem;
 }
 // Cards
-.imgP{
-    padding: $un;
-    background-color: white;
-    border-width: 0.2rem;
-    border-style: solid;
-    cursor: pointer;
-    color: rgb(57, 52, 154);
-    margin: $un;
-}
-.imgP img{
-    @include cards($diez);
-}
 #imgRoja{
     padding-top: 2.5rem;
 }
@@ -68,28 +54,37 @@ h4{
     font-size: 1.5rem;
     color: #0d18aa;
 }
+.btnComprar {
+    background-color: $azulFuerte;
+}
 .btn-success{
-    transition: background 1s ease-in;
+    transition: background 2s ease-in;
 }
 .btn-success:hover{
-    background: rgb(28, 70, 28);
+    background:#331bd3 ;
 }
-.marcas img{
-    @include cards;
-    border: white solid 1px;
+.btnHov{
+    background-color: $azulFuerte;
 }
 .pp{
     color:white ;
     margin: $un;
 }
+.imgMarc{
+    @include cards
+}
+.divRed{
+    @include cards;
+}
 .redess{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 $redes:(
     wsp:#25D366,
-    youtube: #ce1312,
+    youtube: #a32424,
     linkedin:#0e76a8,
 );
 @each $red, $color in $redes {
